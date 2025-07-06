@@ -1,0 +1,33 @@
+data:
+  raw_path: "data/raw/FBMarketplace_Thai.csv"
+
+
+models:
+
+  KMeans:
+    type: "KMeans"
+    params:
+      2:
+        n_clusters: 2
+        random_state: 42
+      3:
+        n_clusters: 3
+        random_state: 42
+      4:
+        n_clusters: 4
+        random_state: 42
+      5:
+        n_clusters: 5
+        random_state: 42
+
+  logistic_regressor: 
+    type: "LogisticRegression"
+    params: {}
+
+  random_forest:
+    type: "RandomForestClassifier"
+    params:
+      n_estimators: 100
+      max_depth: 10
+      random_state: 42
+
