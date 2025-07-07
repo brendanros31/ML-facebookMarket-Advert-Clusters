@@ -25,5 +25,5 @@ def evaluate(trained_model, X_test, y_test):
         y_pred = trained_model.predict(X_test)   # Predictions
         
         print(trained_model)
-        print(f'\nAccuracy: {metrics.accuracy_score(y_test, y_pred)}')
+        print(f'Classification report: \n{metrics.classification_report(y_test, y_pred)}')
   
