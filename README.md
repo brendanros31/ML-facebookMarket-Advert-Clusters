@@ -49,16 +49,21 @@ We explore a dataset of product listings and their engagement metrics to answer:
 
 ## How to Use
 ```bash
+git clone https://github.com/brendanros31/ML-facebookMarket-Listing-Clusters.git
+
+cd ML-facebookMarket-Listing-Clusters
+
 pip install -r requirements.txt
-python main.ipynb
+jupyter notebook main.ipynb
 ```
 
 ---
 
 ## Project Structure
+```
 data/
   raw/
-    Flight_Booking.csv
+    FBMarketplace_Thai.csv
 
 src/
   data_loader.py
@@ -70,3 +75,4 @@ src/
 EDA.ipynb
 main.ipynb
 config/config.yaml
+```
